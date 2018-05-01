@@ -71,18 +71,20 @@ endfunction
 
 " Add all the default extensions
 " Mappings for C and C++
-call <SID>AddAlternateExtensionMapping('h',"c,cpp,cxx,cc,CC")
+call <SID>AddAlternateExtensionMapping('h',"c,cpp,cxx,cc")
 call <SID>AddAlternateExtensionMapping('H',"C,CPP,CXX,CC")
 call <SID>AddAlternateExtensionMapping('hpp',"cpp,c")
 call <SID>AddAlternateExtensionMapping('HPP',"CPP,C")
+call <SID>AddAlternateExtensionMapping('hh',"c,cpp,cxx,cc")
+call <SID>AddAlternateExtensionMapping('HH',"C,CPP,CXX,CC")
 call <SID>AddAlternateExtensionMapping('c',"h")
 call <SID>AddAlternateExtensionMapping('C',"H")
 call <SID>AddAlternateExtensionMapping('cpp',"h,hpp")
 call <SID>AddAlternateExtensionMapping('CPP',"H,HPP")
-call <SID>AddAlternateExtensionMapping('cc',"h")
-call <SID>AddAlternateExtensionMapping('CC',"H,h")
-call <SID>AddAlternateExtensionMapping('cxx',"h")
-call <SID>AddAlternateExtensionMapping('CXX',"H")
+call <SID>AddAlternateExtensionMapping('cc',"h,hh")
+call <SID>AddAlternateExtensionMapping('CC',"H,HH")
+call <SID>AddAlternateExtensionMapping('cxx',"h,hh,hpp")
+call <SID>AddAlternateExtensionMapping('CXX',"H,HH,HPP")
 " Mappings for PSL7
 call <SID>AddAlternateExtensionMapping('psl',"ph")
 call <SID>AddAlternateExtensionMapping('ph',"psl")
